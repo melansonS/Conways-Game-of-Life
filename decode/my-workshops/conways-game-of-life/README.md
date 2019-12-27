@@ -1,4 +1,4 @@
-# Conway's Game of Lige
+# Conway's Game of Life
 
 A simple reimplementation of Conway's famous 'Game of Life'
 
