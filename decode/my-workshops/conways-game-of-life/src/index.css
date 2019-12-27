@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  background-color: #d6d9fd;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.App {
+  background-color: rgb(4, 74, 131);
+  color: white;
+  width: 90%;
+  max-width: 620px;
+  margin: 0px auto;
+  padding-right: 2em;
+}
+header {
+  padding-top: 0.5em;
+  text-align: center;
+}
+.game {
+  display: flex;
+}
+.grid {
+  margin: 0 2em;
+  width: 80%;
+}
+.grid:hover {
+  cursor: pointer;
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+}
+/* @media only screen and (max-width: 700px) {
+  .settings {
+    display: inline;
+  }
+} */
+button {
+  color: #444444;
+  background: #f3f3f3;
+  border: 1px #dadada solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+}
+
+button:hover {
+  border: 1px #c6c6c6 solid;
+  box-shadow: 1px 1px 1px #eaeaea;
+  color: #333333;
+  background: #f7f7f7;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 1px #dfdfdf;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  /* width: 200px; */
+  transform: rotateY(180deg);
+  margin-bottom: 0.8em;
+  background-color: rgb(4, 74, 131);
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 1px rgba(000, 000, 000, 0.1);
+  background-color: #ccc;
+  height: 4px;
+  vertical-align: middle;
+  border: none;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 100%;
+  background-color: #ccc;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  /* border: none; */
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 0.5em;
+}
+footer img {
+  height: 1.5em;
+  padding-left: 0.5em;
+}
+
+@media only screen and (max-width: 700px) {
+  .game {
+    /* background-color: lightblue; */
+    flex-direction: column;
+  }
+  .grid {
+    margin: 0 auto;
+  }
+  .settings {
+    margin: 0 auto;
+    padding-top: 0.5em;
+  }
+  .App {
+    padding-right: 0em;
+  }
+}
